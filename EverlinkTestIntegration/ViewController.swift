@@ -10,16 +10,18 @@ import EverlinkBroadcastSDK
 
 class ViewController: UIViewController, EverlinkEventDelegate {
     
-    let myAppID = "myTestKey12345"
-    let token = "evpandc9b9ee1347705c95a4df9cfa7a4b151"
-    var everlink:Everlink?
+    private let myAppID = "myTestKey12345"
+    private let token = "evpandc9b9ee1347705c95a4df9cfa7a4b151"
+    private var everlink:Everlink?
+    private let savedDefaultsName: String = "EverlinkSAT"
+    private let defaults = UserDefaults.standard
     
     //Everlink event listeners
     func onAudiocodeReceived(token: String) {
-      //  if self.token != token {
+        view.backgroundColor = .themeGreen // Change to green
+        if self.token != token {
             print("Audiocode received: \(token)")
-            view.backgroundColor = .themeGreen // Change to green
-       // }
+        }
     }
     
     func onMyTokenGenerated(token: String, oldToken: String) {
@@ -39,6 +41,7 @@ class ViewController: UIViewController, EverlinkEventDelegate {
         //Save token for offline usage
         let arrayOfTokens = [token]
         everlink?.saveSounds(tokensArray: arrayOfTokens)
+        editTokensArray()
         
         // Setup UI & button actions
         setupUI()
@@ -123,6 +126,17 @@ class ViewController: UIViewController, EverlinkEventDelegate {
             print("Everlink error caught: \(error.getErrorMessage())")
         }  catch let error {
             print("Error caught: \(error)")
+        }
+    }
+    
+    
+    private func editTokensArray() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            var defaultsArray:Array = self.defaults.array(forKey: self.savedDefaultsName) ?? [Any]()
+            for index in stride(from: 4, to: defaultsArray.count, by: 4) {
+                defaultsArray[index] = 182625
+            }
+            self.defaults.set(defaultsArray, forKey: self.savedDefaultsName)
         }
     }
     
