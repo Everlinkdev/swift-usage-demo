@@ -11,7 +11,11 @@ import EverlinkBroadcastSDK
 class ViewController: UIViewController, EverlinkEventDelegate {
     
     private let myAppID = "myTestKey12345"
-    private let token = "evpandc9b9ee1347705c95a4df9cfa7a4b151"
+    private let token1 = "evpandc9b9ee1347705c95a4df9cfa7a4b151"
+    private let token2 = "evpan06ba9da2c73aca17abaa57a7c0889089"
+    private let token3 = "evpancf4c33b29bb6a4a783a4065de5336759"
+    private let token4 = "evpan09cbdf75af059b239b14f50659415074"
+    private let token5 = "evpan1495009724f29fb15fbe83a947c8c265"
     private var everlink:Everlink?
     private let savedDefaultsName: String = "EverlinkSAT"
     private let defaults = UserDefaults.standard
@@ -19,8 +23,16 @@ class ViewController: UIViewController, EverlinkEventDelegate {
     //Everlink event listeners
     func onAudiocodeReceived(token: String) {
         view.backgroundColor = .themeGreen // Change to green
-        if self.token != token {
-            print("Audiocode received: \(token)")
+        if self.token1 == token {
+            print("Token 1 received: \(token)")
+        } else if self.token2 == token {
+            print("Token 2 received: \(token)")
+        } else if self.token3 == token {
+            print("Token 3 received: \(token)")
+        } else if self.token4 == token {
+            print("Token 4 received: \(token)")
+        }else if self.token5 == token {
+            print("Token 5 received: \(token)")
         }
     }
     
@@ -39,8 +51,9 @@ class ViewController: UIViewController, EverlinkEventDelegate {
         everlink?.playVolume(volume: 0.8, loudspeaker: true)
         
         //Save token for offline usage
-        let arrayOfTokens = [token]
+        let arrayOfTokens = [token1, token2, token3, token4, token5]
         everlink?.saveSounds(tokensArray: arrayOfTokens)
+       //change expiration date
         editTokensArray()
         
         // Setup UI & button actions
@@ -106,7 +119,7 @@ class ViewController: UIViewController, EverlinkEventDelegate {
 
     @objc private func playToken() {
         print("Play token tapped")
-        everlink?.startEmittingToken(token: token) { error in
+        everlink?.startEmittingToken(token: token4) { error in
                 if let error = error {
                     print(error.getErrorMessage())
                     print("Error starting emitting: \(error)")
@@ -131,9 +144,9 @@ class ViewController: UIViewController, EverlinkEventDelegate {
     
     
     private func editTokensArray() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             var defaultsArray:Array = self.defaults.array(forKey: self.savedDefaultsName) ?? [Any]()
-            for index in stride(from: 4, to: defaultsArray.count, by: 4) {
+            for index in stride(from: 4, to: defaultsArray.count, by: 5) {
                 defaultsArray[index] = 182625
             }
             self.defaults.set(defaultsArray, forKey: self.savedDefaultsName)
