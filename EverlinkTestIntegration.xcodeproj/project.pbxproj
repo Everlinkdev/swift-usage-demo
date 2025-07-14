@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69F812F2745586A6C4B80917 /* Pods_EverlinkTestIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA5E69718C9EDB3C083FDE /* Pods_EverlinkTestIntegration.framework */; };
+		D7857113E2F2F3B45170F86C /* Pods_EverlinkTestIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC4D6FA7808A7B228D22E19 /* Pods_EverlinkTestIntegration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		044560053389CDF2AADB90C7 /* Pods-EverlinkTestIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverlinkTestIntegration.release.xcconfig"; path = "Target Support Files/Pods-EverlinkTestIntegration/Pods-EverlinkTestIntegration.release.xcconfig"; sourceTree = "<group>"; };
-		27FA5E69718C9EDB3C083FDE /* Pods_EverlinkTestIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EverlinkTestIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		508B888554EB47D1003B8156 /* Pods-EverlinkTestIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverlinkTestIntegration.debug.xcconfig"; path = "Target Support Files/Pods-EverlinkTestIntegration/Pods-EverlinkTestIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+		2E160501AD98637F5DDDAEA8 /* Pods-EverlinkTestIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverlinkTestIntegration.release.xcconfig"; path = "Target Support Files/Pods-EverlinkTestIntegration/Pods-EverlinkTestIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		9FC9428E2E24A96B004DF3A2 /* EverlinkTestIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverlinkTestIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E893B70DAD2DD0857F4BAA86 /* Pods-EverlinkTestIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverlinkTestIntegration.debug.xcconfig"; path = "Target Support Files/Pods-EverlinkTestIntegration/Pods-EverlinkTestIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+		EAC4D6FA7808A7B228D22E19 /* Pods_EverlinkTestIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EverlinkTestIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -43,29 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F812F2745586A6C4B80917 /* Pods_EverlinkTestIntegration.framework in Frameworks */,
+				D7857113E2F2F3B45170F86C /* Pods_EverlinkTestIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		081573632CE3B9315D8950FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				27FA5E69718C9EDB3C083FDE /* Pods_EverlinkTestIntegration.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5F329FDE23F10C18DE8E65CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				508B888554EB47D1003B8156 /* Pods-EverlinkTestIntegration.debug.xcconfig */,
-				044560053389CDF2AADB90C7 /* Pods-EverlinkTestIntegration.release.xcconfig */,
+				E893B70DAD2DD0857F4BAA86 /* Pods-EverlinkTestIntegration.debug.xcconfig */,
+				2E160501AD98637F5DDDAEA8 /* Pods-EverlinkTestIntegration.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DBA4690BB0CDD1F7D150B95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC4D6FA7808A7B228D22E19 /* Pods_EverlinkTestIntegration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9FC942852E24A96B004DF3A2 = {
@@ -74,7 +73,7 @@
 				9FC942902E24A96B004DF3A2 /* EverlinkTestIntegration */,
 				9FC9428F2E24A96B004DF3A2 /* Products */,
 				5F329FDE23F10C18DE8E65CE /* Pods */,
-				081573632CE3B9315D8950FC /* Frameworks */,
+				6DBA4690BB0CDD1F7D150B95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,11 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FC942A42E24A96D004DF3A2 /* Build configuration list for PBXNativeTarget "EverlinkTestIntegration" */;
 			buildPhases = (
-				F040D08F050A89911F6B52FE /* [CP] Check Pods Manifest.lock */,
+				ADDE7BF029191B745CE7EEF4 /* [CP] Check Pods Manifest.lock */,
 				9FC9428A2E24A96B004DF3A2 /* Sources */,
 				9FC9428B2E24A96B004DF3A2 /* Frameworks */,
 				9FC9428C2E24A96B004DF3A2 /* Resources */,
-				A3A5DE9A7533D05E794F5497 /* [CP] Embed Pods Frameworks */,
+				7FC6229D4443091FFB6D781C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,7 +155,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A3A5DE9A7533D05E794F5497 /* [CP] Embed Pods Frameworks */ = {
+		7FC6229D4443091FFB6D781C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,7 +172,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EverlinkTestIntegration/Pods-EverlinkTestIntegration-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F040D08F050A89911F6B52FE /* [CP] Check Pods Manifest.lock */ = {
+		ADDE7BF029191B745CE7EEF4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,13 +209,14 @@
 /* Begin XCBuildConfiguration section */
 		9FC942A52E24A96D004DF3A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 508B888554EB47D1003B8156 /* Pods-EverlinkTestIntegration.debug.xcconfig */;
+			baseConfigurationReference = E893B70DAD2DD0857F4BAA86 /* Pods-EverlinkTestIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VHH8GSFQCS;
+				DEVELOPMENT_TEAM = Z5PKX627WG;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EverlinkTestIntegration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -224,6 +224,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -239,13 +240,14 @@
 		};
 		9FC942A62E24A96D004DF3A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 044560053389CDF2AADB90C7 /* Pods-EverlinkTestIntegration.release.xcconfig */;
+			baseConfigurationReference = 2E160501AD98637F5DDDAEA8 /* Pods-EverlinkTestIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VHH8GSFQCS;
+				DEVELOPMENT_TEAM = Z5PKX627WG;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EverlinkTestIntegration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -253,6 +255,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +306,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -366,7 +369,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
